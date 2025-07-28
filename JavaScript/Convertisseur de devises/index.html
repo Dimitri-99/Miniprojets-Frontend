@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Convertisseur de devises</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Convertisseur de devises</h1>
+        </header>
+        <main>
+            <form id="currency-form">
+                <label for="amount">Montant :</label>
+                <input type="number" id="amount" required>
+
+                <label for="from-currency">De :</label>
+                <select id="from-currency" required></select>
+
+                <label for="to-currency">À :</label>
+                <select id="to-currency" required></select>
+
+                <button type="submit">Convertir</button>
+            </form>
+            <div id="result"></div>
+        </main>
+        <footer>
+            <p>&copy; 2023 Convertisseur de devises</p>
+        </footer>
+    </body>
+</html>
