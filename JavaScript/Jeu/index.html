@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang "fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>jeu : deviner un nombre entre 1 et 100</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <h1>Devinez le nombre entre 1 et 100</h1>
+        <p>Essayez de deviner le nombre choisi par l'ordinateur !</p>
+        <form id="guessForm">
+            <label for="guessInput">Entrez votre nombre :</label>
+            <input type="number" id="guessInput" min="1" max="100" required>
+            <button type="submit">Deviner</button>
+        </form>
+        <div id="result"></div>
+        <button id="resetButton" style="display:none;">Recommencer</button>
+    </body> 
+</html>
