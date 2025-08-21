@@ -28,13 +28,15 @@ function TodoList() {
         placeholder="Ajouter une tâche"
       />
       <button onClick={addTodo}>Ajouter</button>
+      <button onClick={clearTodos} style={{marginLeft: "0.5em", background: "#e74c3c"}}>Tout supprimer</button>
       <ul>
         {todos.map((todo, idx) => (
-          <li key={idx} style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-            <span>{todo}</span>
+          <li key={idx}>
+            {todo}
             <button
               onClick={() => removeTodo(idx)}
               style={{
+                marginLeft: "1em",
                 background: "#e74c3c",
                 color: "#fff",
                 border: "none",
@@ -48,23 +50,6 @@ function TodoList() {
           </li>
         ))}
       </ul>
-      <button
-        onClick={clearTodos}
-        style={{
-          marginTop: "2em",
-          width: "100%",
-          background: "#e74c3c",
-          color: "#fff",
-          border: "none",
-          borderRadius: "6px",
-          padding: "0.7em",
-          fontWeight: "bold",
-          fontSize: "1em",
-          cursor: "pointer"
-        }}
-      >
-        Tout supprimer
-      </button>
     </div>
   );
 }
